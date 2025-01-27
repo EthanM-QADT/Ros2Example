@@ -18,13 +18,13 @@ class MyNode(Node):
 
 def main *args-None):
   # Initilize ros2 coms
-  rcply.init(args=args)
+  rclpy.init(args=args)
   # Create the node
   node = MyNode()
   # Constantly run the node
   rclpy.spin(node)
   # Shutdown ros2 coms
-  rcply.shutdown()
+  rclpy.shutdown()
 
 # Standard python convention for executable files
 if __name__ == '__main__':
